@@ -1,0 +1,73 @@
+.header {
+	position: fixed;
+	z-index: 99999;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	&__wrapper {
+		padding: 10px 0;
+		text-transform: uppercase;
+		display: flex;
+		font-size: 16px;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		max-width: 130px;
+		display: flex;
+		align-items: center;
+		color: $main;
+		font-size: 18px;
+		position: relative;
+	}
+	&__menu {
+		ul {
+			display: flex;
+			justify-content: space-between;
+			li {
+				margin-right: 40px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	&__menu-link {
+		color: $main;
+		transition: color 0.2s ease 0s;
+		&:hover {
+			color: $main2;
+		}
+		&:active {
+			color: $main3;
+		}
+	}
+	&__tel {
+		display: inline-flex;
+		align-items: center;
+		color: $main;
+		transition: color 0.2s ease 0s;
+		&:hover {
+			color: $main2;
+		}
+		&:active {
+			color: $main3;
+		}
+	}
+	&__icons-tel {
+		width: 20px;
+		height: 20px;
+		margin-right: 5px;
+	}
+}
+.logo-tulp {
+	width: 40px;
+	margin-right: -20px;
+}
+.logo-rose {
+	width: 40px;
+	&:first-child {
+		margin-right: -20px;
+	}
+}

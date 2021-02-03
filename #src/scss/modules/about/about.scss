@@ -1,0 +1,45 @@
+.about {
+	background: url("../img/about/bg-about.jpg") 0 0 / cover no-repeat;
+	&__wrapper {
+		padding: 140px 0;
+		text-align: center;
+	}
+	&__content {
+		display: flex;
+	}
+	&__info {
+		flex: 0 0 50%;
+		text-align: center;
+		margin-left: 55px;
+		h2 {
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 40px;
+			font-weight: 700;
+			color: $main;
+			text-shadow: 1px 1px 6px $main2;
+			margin-bottom: 40px;
+		}
+		p {
+			text-align: justify;
+			color: $main;
+			font-size: 20px;
+			line-height: 22px;
+			margin-bottom: 40px;
+			text-shadow: 1px 1px 6px $gray;
+		}
+	}
+	&__button {
+		margin-bottom: 0;
+	}
+}
+.swiper-slide-image {
+	img {
+		width: 500px;
+		height: 700px;
+		object-fit: cover;
+	}
+}
+.swiper-pagination-bullet-active {
+	background: $main2 !important;
+}

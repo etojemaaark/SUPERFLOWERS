@@ -1,0 +1,55 @@
+/// UTILS ///
+
+@import "utils/fonts.scss";
+@import "utils/mixins.scss";
+@import "utils/nullstyle.scss";
+@import "utils/vars.scss";
+
+/// ШРИФТЫ ///
+
+/// ОСНОВНАЯ СЕТКА ///
+
+body {
+	font-family: $ff;
+}
+.container {
+	max-width: $maxWC;
+	margin: 0 auto;
+	width: 100%;
+}
+.firstscreen {
+	background: url("../img/main/bg-main.jpg") 0 0 / cover no-repeat;
+}
+.btn {
+	display: inline-block;
+	color: $main;
+	background-color: $main2;
+	padding: 20px 50px;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	margin-bottom: 80px;
+	transition: all 0.1s ease 0s;
+	box-shadow: 0 6px $main4, 0 3px 15px rgba(0, 0, 0, 0.4), inset 0 1px rgba(255, 255, 255, 0.3),
+		inset 0 0 3px rgba(255, 255, 255, 0.5);
+	&:active {
+		transform: translate(0, 2px);
+		box-shadow: 0 2px $main4, 0 1px 6px rgba(0, 0, 0, 0.4), inset 0 1px rgba(255, 255, 255, 0.3),
+			inset 0 0 3px rgba(255, 255, 255, 0.5);
+	}
+	&:hover {
+		background-color: $main3;
+	}
+}
+////////////////////////////////////////////
+
+////////////////////////////////////////////
+
+////////////////////////////////////////////
+
+/// ПОДКЛЮЧЕНИЕ СЕКЦИЙ ///
+
+@import "modules/header/header.scss";
+@import "modules/main/main.scss";
+@import "modules/about/about.scss";
+@import "modules/catalog/catalog.scss";
